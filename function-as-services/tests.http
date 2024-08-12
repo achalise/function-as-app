@@ -1,0 +1,28 @@
+POST http://localhost:8081/receiveMessage
+Content-Type: application/json
+
+{
+  "firstName": "Joe",
+  "lastName": "Bloggs",
+  "email": "joe@bloggs.com",
+  "amount": 100,
+  "rebateType": "SER",
+  "bankAccountName": "Joe Bloggs",
+  "bankAccountNumber": "10876543",
+  "bsb": "067432"
+}
+
+###
+POST http://localhost:8081/submitApplication
+Content-Type: application/json
+
+{
+"firstName": "Joe",
+"lastName": "Bloggs",
+"email": "joe@bloggs.com",
+"amount": 100,
+"rebateType": "SER",
+"bankAccountName": "Joe Bloggs",
+"bankAccountNumber": "10876543",
+"bsb": "067432"
+}

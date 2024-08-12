@@ -1,0 +1,6 @@
+spring:
+  application:
+    name: integration-app
+  cloud:
+    function:
+      definition: receiveMessage

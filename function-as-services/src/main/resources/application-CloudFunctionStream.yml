@@ -1,0 +1,26 @@
+spring:
+  cloud:
+    function:
+      definition: checkEligibility;fraudCheck;processPayment
+    stream:
+      bindings:
+        # applicationIn -> eligibilityCheck -> fraudCheck -> payment
+        checkEligibility-in-0:
+          destination: claim_applications
+        checkEligibility-out-0:
+          destination: fraud_check_in
+        fraudCheck-in-0:
+          destination: fraud_check_in
+        fraudCheck-out-0:
+          destination: payment_requests
+        processPayment-in-0:
+          destination: payment_requests
+        processPayment-out-0:
+          destination: payment_result
+        processPaymentPoll-in-0:
+          destination: rebate_applications
+
+      kafka:
+        binder:
+          brokers: localhost:9092
+      pollable-source: processPaymentPoll

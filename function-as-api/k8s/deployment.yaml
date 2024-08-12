@@ -1,0 +1,39 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: my-app-deployment
+  name: my-app-deployment
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: my-app-deployment
+  strategy: {}
+  template:
+    metadata:
+      labels:
+        app: my-app-deployment
+    spec:
+      containers:
+        - image: docker.io/achalise/eventdriven:0.2
+          name: eventdriven
+          env:
+            - name: spring_profiles_active
+              value: cf
+            - name: KAFKA_USER
+              valueFrom:
+                secretKeyRef:
+                  key: username
+                  name: kafka-secrets
+            - name: KAFKA_PASSWORD
+              valueFrom:
+                secretKeyRef:
+                  key: password
+                  name: kafka-secrets
+            - name: KAFKA_BROKER
+              valueFrom:
+                secretKeyRef:
+                  key: broker
+                  name: kafka-secrets
+          resources: {}

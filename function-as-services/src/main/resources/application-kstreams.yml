@@ -1,0 +1,8 @@
+spring:
+  application:
+    name: streams-app
+  cloud:
+    stream:
+      kafka:
+        binder:
+          brokers: localhost:9092
