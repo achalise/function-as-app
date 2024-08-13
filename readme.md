@@ -1,7 +1,6 @@
 
 # Function as App
 
-[Article for this repo](https://chalise-arun.medium.com/write-once-deploy-everywhere-with-spring-cloud-function-7e3fa0ef4efdA)
 
 https://chalise-arun.medium.com/write-once-deploy-everywhere-with-spring-cloud-function-7e3fa0ef4efd
 
