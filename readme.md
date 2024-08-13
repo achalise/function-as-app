@@ -1,6 +1,7 @@
 
 # Function as App
 
+[Article for this repo](https://chalise-arun.medium.com/write-once-deploy-everywhere-with-spring-cloud-function-7e3fa0ef4efdA)
 An example set up for writing business logic once and deploying to different architectures using Spring Cloud Function. 
 
 To run the api (application is saved in a MongoDB collection and event published to a kafka topic)
