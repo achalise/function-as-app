@@ -1,4 +1,4 @@
-package example.rebates.eventdriven;
+package example.claims.eventdriven;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

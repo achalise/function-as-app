@@ -1,16 +1,14 @@
-package example.rebates.eventdriven.config;
+package example.claims.eventdriven.config;
 
-import example.rebates.eventdriven.functions.SubmitApplication;
-import example.rebates.eventdriven.messaging.KafkaMessageService;
-import example.rebates.eventdriven.messaging.MessageService;
-import example.rebates.eventdriven.repository.ApplicationRepository;
+import example.claims.eventdriven.functions.SubmitApplication;
+import example.claims.eventdriven.messaging.KafkaMessageService;
+import example.claims.eventdriven.messaging.MessageService;
+import example.claims.eventdriven.repository.ApplicationRepository;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.kafka.config.TopicBuilder;
 import org.springframework.kafka.core.KafkaTemplate;
-
-import java.util.function.Supplier;
 
 @Configuration
 class AppConfig {

@@ -1,4 +1,4 @@
-package example.rebates.eventdriven.models;
+package example.claims.eventdriven.models;
 
 public enum ApplicationState {
    APPLICATION_STATE_NEW, APPLICATION_STATE_ELIGIBILITY_CHECK_SUCCESS, APPLICATION_STATE_ELIGIBILITY_CHECK_FAIL,

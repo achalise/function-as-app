@@ -1,13 +1,13 @@
-package example.rebates.eventdriven.functions;
+package example.claims.eventdriven.functions;
 
-import example.rebates.eventdriven.messaging.MessageService;
-import example.rebates.eventdriven.models.ApplicationResponse;
-import example.rebates.eventdriven.models.ApplicationState;
-import example.rebates.eventdriven.models.BankAccount;
-import example.rebates.eventdriven.models.Claim;
-import example.rebates.eventdriven.models.CustomerDetail;
-import example.rebates.eventdriven.models.ClaimApplication;
-import example.rebates.eventdriven.repository.ApplicationRepository;
+import example.claims.eventdriven.models.ClaimApplication;
+import example.claims.eventdriven.repository.ApplicationRepository;
+import example.claims.eventdriven.messaging.MessageService;
+import example.claims.eventdriven.models.ApplicationResponse;
+import example.claims.eventdriven.models.ApplicationState;
+import example.claims.eventdriven.models.BankAccount;
+import example.claims.eventdriven.models.Claim;
+import example.claims.eventdriven.models.CustomerDetail;
 import reactor.core.publisher.Mono;
 
 import java.time.OffsetDateTime;

@@ -1,6 +1,6 @@
-package example.rebates.eventdriven.repository;
+package example.claims.eventdriven.repository;
 
-import example.rebates.eventdriven.models.Claim;
+import example.claims.eventdriven.models.Claim;
 import org.springframework.data.mongodb.repository.ReactiveMongoRepository;
 import org.springframework.stereotype.Repository;
 

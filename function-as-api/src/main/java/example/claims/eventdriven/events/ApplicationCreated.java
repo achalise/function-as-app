@@ -1,6 +1,6 @@
-package example.rebates.eventdriven.events;
+package example.claims.eventdriven.events;
 
-import example.rebates.eventdriven.models.ClaimApplication;
+import example.claims.eventdriven.models.ClaimApplication;
 
 import java.util.Date;
 

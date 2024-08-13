@@ -1,9 +1,8 @@
-package example.rebates.eventdriven.messaging;
+package example.claims.eventdriven.messaging;
 
 import com.fasterxml.jackson.datatype.jsr310.JavaTimeModule;
-import example.rebates.eventdriven.events.ApplicationCreated;
-import example.rebates.eventdriven.models.Claim;
-import example.rebates.eventdriven.models.SendMessageResult;
+import example.claims.eventdriven.models.Claim;
+import example.claims.eventdriven.models.SendMessageResult;
 import org.springframework.kafka.core.KafkaTemplate;
 import reactor.core.publisher.Mono;
 import com.fasterxml.jackson.databind.ObjectMapper;
